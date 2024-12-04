@@ -25,7 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/modern_desk/css/modern_desk.css"
+app_include_css = "/assets/modern_desk/css/modern_desk.css"
 # app_include_js = "/assets/modern_desk/js/modern_desk.js"
 
 # include js, css files in header of web template
@@ -177,9 +177,10 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "modern_desk.event.get_events"
-# }
+override_whitelisted_methods = {
+	# "frappe.desk.doctype.event.event.get_events": "modern_desk.event.get_events"
+	"frappe.core.doctype.user.user.switch_theme": "modern_desk.overrides.switch_theme.switch_theme"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
