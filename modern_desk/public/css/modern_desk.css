@@ -1,0 +1,71 @@
+:root,
+[data-theme="modern_ui_theme"] {
+}
+
+/* sidebar */
+.body-sidebar {
+	background-color: #111d3b;
+}
+
+.sidebar-item-icon .icon, .sidebar-item-control svg, .body-sidebar-bottom svg {
+	fill: white;
+}
+
+.body-sidebar .standard-sidebar-item .item-anchor {
+	color: white;
+}
+
+.sidebar-item-label {
+	color: white;	
+}
+.body-sidebar .standard-sidebar-item .sidebar-item-label {
+	font-size: var(--text-md);
+}
+
+
+/** Sales window tab */
+.form-tabs-list {
+	background-color: #111d3b;
+	border-radius: 0;
+}
+.form-tabs-list .form-tabs .nav-item .nav-link {
+	color: #c3c3c3;
+}
+.form-tabs-list .form-tabs .nav-item .nav-link.active {
+	color: #fff;
+	background: #334573;
+	padding: 10px;
+}
+
+/* table header */
+.list-row-container .list-row-head  {
+	background-color: #111d3b;
+	border-radius: 0;
+}
+
+.list-row-container .list-row-head .list-row-col, .list-row-container .list-row-head .level-item{
+	color: white;
+}
+.list-row-container .list-count {
+	color: rgb(187, 187, 187);
+}
+.list-row-head .level-item svg{
+	fill: white;
+}
+/* Widget */
+
+.widget, .widget.links-widget-box {
+	border-radius: 0;
+}
+
+.widget.shortcut-widget-box,
+.widget.links-widget-box {
+	background: #f3f3f3;
+}
+.widget .widget-head {
+	margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding: 10px;
+    background: #d1d8dd;
+}
