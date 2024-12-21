@@ -36,6 +36,9 @@
 	background: #334573;
 	padding: 10px;
 }
+.form-control {
+	border-radius: 0;
+}
 
 /* table header */
 .list-row-container .list-row-head  {
