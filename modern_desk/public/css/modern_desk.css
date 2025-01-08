@@ -1,9 +1,17 @@
+:root {
+	--input-height: 34px;
+	--input-padding: 8px 10px;
+	--mdt-primary: #48577d;
+	--mdt-primary-shade: #6d7da6;
+}
 :root,
 [data-theme="modern_ui_theme"] {
+	
 }
 
+/** v16 */
 /* sidebar */
-.body-sidebar {
+/* .body-sidebar {
 	background-color: #111d3b;
 }
 
@@ -20,11 +28,11 @@
 }
 .body-sidebar .standard-sidebar-item .sidebar-item-label {
 	font-size: var(--text-md);
-}
+} */
 
 
 /** Sales window tab */
-.form-tabs-list {
+/* .form-tabs-list {
 	background-color: #111d3b;
 	border-radius: 0;
 }
@@ -38,10 +46,10 @@
 }
 .form-control {
 	border-radius: 0;
-}
+} */
 
 /* table header */
-.list-row-container .list-row-head  {
+/* .list-row-container .list-row-head  {
 	background-color: #111d3b;
 	border-radius: 0;
 }
@@ -54,21 +62,82 @@
 }
 .list-row-head .level-item svg{
 	fill: white;
-}
+} */
 /* Widget */
-
+/* 
 .widget, .widget.links-widget-box {
 	border-radius: 0;
-}
+} */
 
-.widget.shortcut-widget-box,
+/* .widget.shortcut-widget-box,
 .widget.links-widget-box {
 	background: #f3f3f3;
-}
-.widget .widget-head {
+} */
+/* .widget .widget-head {
 	margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
     padding: 10px;
     background: #d1d8dd;
+} */
+
+/** v16 */
+
+
+.desk-sidebar .standard-sidebar-item.selected, 
+.navbar,
+.list-row-head,
+.form-tabs-list,
+.page-main-content .ce-block__content .ce-header {
+	background: var(--mdt-primary);
+}
+.desk-sidebar .standard-sidebar-item.selected, 
+.desk-sidebar .standard-sidebar-item.selected .sidebar-item-label,
+.navbar,
+.list-row-head .level-item,
+.navbar .nav a,
+.form-tabs-list .form-tabs .nav-item .nav-link,
+.dropdown-help button,
+.page-main-content .ce-block__content .ce-header .h4 {
+	color: white;
+}
+
+.desk-sidebar .standard-sidebar-item.selected svg, .navbar svg, .navbar svg use{
+	fill: white;
+	stroke: white;
+}
+
+.navbar .search-icon svg use {
+	stroke: black;
+}
+#navbar-breadcrumbs a::before {
+	content: url("data: image/svg+xml;utf8, <svg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.25 7.5L4.75 4L1.25 0.5' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+
+.list-row-head,
+.form-tabs-list,
+.form-control,
+.desk-sidebar .standard-sidebar-item,
+[data-page-route=Workspaces] .layout-main-section {
+	border-radius: 0;
+}
+
+.list-row-head.text-muted {
+	color: #e3e3e3 !important;
+}
+
+.form-tabs-list .form-tabs .nav-item .nav-link.active {
+	background: var(--mdt-primary-shade);
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+}
+
+[data-page-route=Workspaces] .standard-sidebar-item .item-anchor {
+	padding: 7px 0px 7px 8px;
+}
+
+.page-main-content .ce-block__content .ce-header {
+	padding: 10px;
 }
