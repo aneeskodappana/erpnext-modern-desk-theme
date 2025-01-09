@@ -1,6 +1,7 @@
 :root {
 	--input-height: 34px;
 	--input-padding: 8px 10px;
+	--btn-height: 34px;
 	--mdt-primary: #48577d;
 	--mdt-primary-shade: #6d7da6;
 }
@@ -88,7 +89,8 @@
 .navbar,
 .list-row-head,
 .form-tabs-list,
-.page-main-content .ce-block__content .ce-header {
+.page-main-content .ce-block__content .ce-header,
+.btn.btn-primary {
 	background: var(--mdt-primary);
 }
 .desk-sidebar .standard-sidebar-item.selected, 
@@ -113,15 +115,16 @@
 #navbar-breadcrumbs a::before {
 	content: url("data: image/svg+xml;utf8, <svg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.25 7.5L4.75 4L1.25 0.5' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 }
+#navbar-breadcrumbs li.disabled a {
+	color: #b9b9b9;
+}
 
-
-.list-row-head,
+/* .list-row-head,
 .form-tabs-list,
-.form-control,
 .desk-sidebar .standard-sidebar-item,
 [data-page-route=Workspaces] .layout-main-section {
 	border-radius: 0;
-}
+} */
 
 .list-row-head.text-muted {
 	color: #e3e3e3 !important;
@@ -140,4 +143,22 @@
 
 .page-main-content .ce-block__content .ce-header {
 	padding: 10px;
+}
+.form-links .document-link .document-link-badge {
+	background-color: #ecf1ff;
+}
+.form-control {
+	background-color: #fff;
+	border: 1px solid #6c89d1;
+}
+
+.page-actions .btn:not(.icon-btn) {
+	padding: 8px 15px;
+}
+.desk-page.page-main-content .ce-block__content .widget,
+.widget.links-widget-box .link-item {
+	padding: 10px;
+	border-bottom: 1px solid var(--mdt-primary);
+	border-radius: 0px;
+	margin-bottom: 12px;
 }
